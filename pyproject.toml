@@ -1,0 +1,36 @@
+[project]
+name = "sensor-analyzer"
+version = "0.1.0"
+description = "Sensor analyzer"
+readme = "README.org"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "rich",
+    "rich-argparse"
+]
+
+[dependency-groups]
+dev = [
+    "black",
+    "isort",
+    "pyflakes",
+    "ty",
+    "pdoc",
+    "tabulate",
+]
+
+[tool.uv]
+package = true
+
+[tool.pdoc]
+output_directory = "docs"
+docformat = "google"
+
+[project.scripts]
+sensor-analyzer = "sensor_analyzer.cli:main"
+
+[build-system]
+requires = ["flit_core>=3.2"]
+build-backend = "flit_core.buildapi"

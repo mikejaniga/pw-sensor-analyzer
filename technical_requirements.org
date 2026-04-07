@@ -1,0 +1,37 @@
+PROJECT TECHNICAL REQUIREMENTS - SENSOR ANALYSIS
+
+PROJECT GOAL Create a command-line script (CLI) for processing and
+consolidating mine measurement data stored in CSV files. The script should
+generate a summary matrix for multiple measurement series.
+
+INPUT DATA
+1. Format: CSV files containing 4 columns in a fixed
+order: name, description, time, alarm/success.
+2. Characteristics: The number of sensors may vary
+between individual files (measurement series).
+3. Data selection:
+The user must be able to specify a date range, corresponding to the names of the
+files to be loaded.
+
+PROCESSING LOGIC
+1. Success criterion: A measurement is considered successful
+only if its duration is not less than half the median duration
+of all measurements in a given set.
+2. Missing data: If a specific sensor is missing in a
+given series, it is treated as a measurement failure.
+
+RESULT MATRIX MARKINGS
+- (minus): Measurement failure (too
+short duration) or missing sensor data.
++ (plus): Successful measurement
+without an alarm.
+! (exclamation mark): Successful measurement with
+a simultaneous alarm.
+
+FUNCTIONAL REQUIREMENTS
+1. Interface: Use the argparse library
+to handle command-line parameters.
+2. Output: Ability to display results
+in the console window and optional saving to an Excel file (.xlsx).
+3. Structure: The result must take the form of a comparative matrix according to the pattern
+provided in the sample materials.

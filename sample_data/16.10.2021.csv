@@ -1,0 +1,30 @@
+name,description,time,alarm
+sensor 1,high methane level,201,Yes
+sensor 2,,200,No
+sensor 3,,184,No
+sensor 4,,200,No
+sensor 5,,200,No
+sensor 6,high methane level,201,Yes
+sensor 7,,201,No
+sensor 8,,200,No
+sensor 9,,199,No
+sensor 10,,199,No
+sensor 11,,200,No
+sensor 12,,200,No
+sensor 13,,200,No
+sensor 14,,200,No
+sensor 15,,200,No
+sensor 16,,200,No
+sensor 17,,200,No
+sensor 18,,201,No
+sensor 19,,200,No
+sensor 20,,200,No
+sensor 21,,200,No
+sensor 22,,200,No
+sensor 23,,200,No
+sensor 24,,199,No
+sensor 25,,200,No
+sensor 26,,200,No
+sensor 27,,199,No
+sensor 28,,198,No
+sensor 29,,194,No
