@@ -3,7 +3,7 @@ name = "sensor-analyzer"
 version = "0.1.0"
 description = "Sensor analyzer"
 readme = "README.org"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "pandas",
     "openpyxl",
