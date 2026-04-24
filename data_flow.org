@@ -46,8 +46,7 @@ package "Output Layer (cli.py / openpyxl)" {
 @enduml
 #+end_src
 
-#+RESULTS:
-[[file:data_flow.png]]
+[[./data_flow.png]]
 
 ** Stage descriptions:
 1. **Argument retrieval**: The =cli.py= script validates the dates entered by the user.
