@@ -45,4 +45,4 @@ The measurement duration must be at least half the median time of series measure
 *** ARCHITECTURE
 The data flow diagram can be found in the [[file:data_flow.org][data_flow.org]] file and on the generated diagram:
 
-[[file:data_flow.png]]
+[[./data_flow.svg]]

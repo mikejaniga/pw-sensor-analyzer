@@ -47,7 +47,7 @@ package "Output Layer (cli.py / openpyxl)" {
 #+end_src
 
 #+RESULTS:
-[[file:data_flow.svg]]
+[[./data_flow.svg]]
 
 ** Stage descriptions:
 1. **Argument retrieval**: The =cli.py= script validates the dates entered by the user.
