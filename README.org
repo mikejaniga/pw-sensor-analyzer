@@ -1,13 +1,13 @@
 #+TITLE: Mine Sensor Measurement Analyzer
 #+AUTHOR: Michał Janiga
 
-*** DESCRIPTION
+*** Description
 A console tool used to consolidate data from multiple CSV files into a single result matrix. The script processes measurement series from different days, handling a variable number of sensors between readings.
 
-*** ENVIRONMENT AND DEPENDENCIES
+*** Environment and dependencies
 The project uses the ~uv~ tool for dependency and environment management. The project configuration is located in the ~pyproject.toml~ file. Python version 3.12 or newer is required. The main packages are ~pandas~ and ~openpyxl~.
 
-*** INSTALLATION
+*** Installation
 #+begin_src bash
 uv sync
 #+end_src
@@ -17,7 +17,7 @@ To install the tool globally on the system:
 uv tool install .
 #+end_src
 
-*** USAGE
+*** Usage
 In the environment:
 #+begin_src bash
 uv run sensor-analyzer --start DD.MM.YYYY --end DD.MM.YYYY [options]
@@ -28,7 +28,7 @@ Globally:
 sensor-analyzer --start DD.MM.YYYY --end DD.MM.YYYY [options]
 #+end_src
 
-*** ARGUMENTS
+*** Arguments
 - ~-s, --start~ :: start date in DD.MM.YYYY format (required)
 - ~-e, --end~ :: end date in DD.MM.YYYY format (required)
 - ~-o, --output~ :: output format (console, excel, both - default: both)
@@ -36,13 +36,13 @@ sensor-analyzer --start DD.MM.YYYY --end DD.MM.YYYY [options]
 - ~-d, --dir~ :: directory containing input CSV files (default: sample_data)
 - ~--debug~ :: developer view
 
-*** VALIDATION RULES AND MARKINGS
+*** Validation rules and markings
 The measurement duration must be at least half the median time of series measurements.
 - ~+~ :: correct measurement, no alarm
 - ~!~ :: correct measurement, active alarm
 - ~-~ :: measurement time too short or sensor missing from file
 
-*** ARCHITECTURE
+*** Architecture
 The data flow diagram can be found in the [[file:data_flow.org][data_flow.org]] file and on the generated diagram:
 
 [[./data_flow.svg]]
