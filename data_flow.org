@@ -5,7 +5,7 @@
 
 The diagram below shows the data path from user input parameters to the final report.
 
-#+begin_src plantuml :file data_flow.png
+#+begin_src plantuml :file data_flow.svg
 @startuml
 skinparam monochrome true
 skinparam shadowing false
@@ -46,7 +46,8 @@ package "Output Layer (cli.py / openpyxl)" {
 @enduml
 #+end_src
 
-[[./data_flow.png]]
+#+RESULTS:
+[[file:data_flow.svg]]
 
 ** Stage descriptions:
 1. **Argument retrieval**: The =cli.py= script validates the dates entered by the user.
