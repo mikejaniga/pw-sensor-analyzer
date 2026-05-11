@@ -50,8 +50,8 @@ package "Output Layer (cli.py / openpyxl)" {
 [[file:data_flow.svg]]
 
 ** Stage descriptions:
-1. **Argument retrieval**: The =cli.py= script validates the dates entered by the user.
-2. **File selection**: =SensorAnalyzer= searches the data folder, extracts dates from filenames (e.g., =16.10.2021.csv=), and sorts them so the report columns are in the correct order.
-3. **Statistical analysis**: The system loads data (=_load_measurements=) and, using memory optimization (=itertools.chain=), passes times as a stream to the function determining the median (=_calculate_threshold=).
-4. **Transformation**: Data is evaluated using the =_determine_status= method and flattened into a matrix where rows are sensors and columns are dates.
-5. **Presentation**: The result is sent to the screen or an Excel file with automatic cell coloring (Green for +, Red for !, Grey for -).
+1. *Argument retrieval*: The =cli.py= script validates the dates entered by the user.
+2. *File selection*: =SensorAnalyzer= searches the data folder, extracts dates from filenames (e.g., =16.10.2021.csv=), and sorts them so the report columns are in the correct order.
+3. *Statistical analysis*: The system loads data (=_load_measurements=) and, using memory optimization (=itertools.chain=), passes times as a stream to the function determining the median (=_calculate_threshold=).
+4. *Transformation*: Data is evaluated using the =_determine_status= method and flattened into a matrix where rows are sensors and columns are dates.
+5. *Presentation*: The result is sent to the screen or an Excel file with automatic cell coloring (Green for +, Red for !, Grey for -).
