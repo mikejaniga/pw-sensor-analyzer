@@ -5,7 +5,7 @@
 
 The diagram below shows the data path from user input parameters to the final report.
 
-#+begin_src plantuml :file data_flow.svg :results graphics :exports results
+#+begin_src plantuml :file data_flow.svg :exports both
 @startuml
 skinparam monochrome true
 skinparam shadowing false
