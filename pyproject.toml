@@ -8,7 +8,9 @@ dependencies = [
     "pandas",
     "openpyxl",
     "rich",
-    "rich-argparse"
+    "rich-argparse",
+    "dagster",
+    "dagster-webserver"
 ]
 
 [dependency-groups]
